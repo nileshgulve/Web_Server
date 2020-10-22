@@ -16,8 +16,8 @@ jobs:
     - uses: actions/checkout@v2
     - name: Build the Docker image
       env:
-        USER: ${{ secrets.Username }}
-        PASS: ${{ secrets.Pass }}
+        USER: ${{ secrets.USERNAME }}
+        PASS: ${{ secrets.PASS }}
       run: |
         echo $USER
         echo $PASS
